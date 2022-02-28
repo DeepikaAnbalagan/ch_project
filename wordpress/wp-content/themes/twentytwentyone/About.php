@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name:Home
+* Template Name:About
 * Template Post Type: post, page
 *
  * @package WordPress

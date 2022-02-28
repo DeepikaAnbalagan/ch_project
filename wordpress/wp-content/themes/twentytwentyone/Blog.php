@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name:Home
+* Template Name:Blog
 * Template Post Type: post, page
 *
  * @package WordPress
@@ -10,7 +10,6 @@
 
 get_header();
 ?>
-
 <?php
 get_footer();
 ?>

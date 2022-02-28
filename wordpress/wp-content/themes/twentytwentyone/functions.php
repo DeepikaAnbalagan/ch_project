@@ -640,3 +640,26 @@ function twentytwentyone_add_ie_class() {
 	<?php
 }
 add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
+
+
+//custom menu 
+function wpb_custom_new_menu() {
+	register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
+  }
+  add_action( 'init', 'wpb_custom_new_menu' );
+
+
+  //custom widget
+function wpb_widgets_init() {
+ 
+    register_sidebar( array(
+        'name'          => 'custom footer address',
+        'id'            => 'footeraddress',
+        'before_widget' => '<div class="chw-widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="chw-title">',
+        'after_title'   => '</h2>',
+     ) );
+ 
+}
+add_action( 'widgets_init', 'wpb_widgets_init' );
